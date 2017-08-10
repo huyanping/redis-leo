@@ -2,7 +2,7 @@
   "name": "jenner/redis-leo",
   "require": {
     "ext-redis": "*",
-    "jenner/zoomeye": "0.1",
+    "jenner/zoomeye": "0.1.*",
     "jenner/simple_fork": "*",
     "vlucas/phpdotenv": "v2.3.0"
   },
