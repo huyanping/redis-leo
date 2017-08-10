@@ -9,7 +9,6 @@
 namespace Vincent\Mice\Redis;
 
 
-use Dotenv\Dotenv;
 use Vincent\Zoomeye\Query\HostQuery;
 use Vincent\Zoomeye\Zoomeye;
 
@@ -26,7 +25,6 @@ class ZoomeyeRedisIpFinder
             if(!empty(getenv("ZOOMEYE_COUNTRY"))) {
                 $query->setCountry(getenv("ZOOMEYE_COUNTRY"));
             }
-            $query->setCountry("印度");
 
             try{
                 $page = 1;
