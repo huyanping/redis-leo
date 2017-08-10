@@ -21,7 +21,7 @@ class ZoomeyeRedisIpFinder
             $client->login(getenv("ZOOMEYE_USER_NAME"), getenv("ZOOMEYE_PASSWORD"));
 
             $query = new HostQuery();
-            $query->setPort("6379");
+            $query->setPort(getenv('REDIS_PORT'));
             if(!empty(getenv("ZOOMEYE_COUNTRY"))) {
                 $query->setCountry(getenv("ZOOMEYE_COUNTRY"));
             }
