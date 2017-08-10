@@ -9,6 +9,6 @@
 require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'bootstrap.php';
 
 $hack = new \Vincent\Mice\Redis\RedisHack();
-$hack->connect("127.0.0.1", 6380);
+$hack->connect("127.0.0.1", 6379);
 $hack->hack();
 
