@@ -23,6 +23,7 @@ class ZoomeyeRedisIpFinder
 
             $query = new HostQuery();
             $query->setPort(getenv('REDIS_PORT'));
+            $query->setService('redis');
             if(!empty(getenv("ZOOMEYE_COUNTRY"))) {
                 $query->setCountry(getenv("ZOOMEYE_COUNTRY"));
             }
