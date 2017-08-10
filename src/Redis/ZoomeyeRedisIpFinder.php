@@ -19,7 +19,7 @@ class ZoomeyeRedisIpFinder
         try{
             $client = Zoomeye::create();
             $token = $client->login(getenv("ZOOMEYE_USER_NAME"), getenv("ZOOMEYE_PASSWORD"));
-            $client->setToken($token);
+            $client->setToken($token['access_token']);
 
             $query = new HostQuery();
             $query->setPort(getenv('REDIS_PORT'));
