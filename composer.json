@@ -1,0 +1,15 @@
+{
+  "name": "vincent/mice",
+  "require": {
+    "php": ">=5.5.9",
+    "ext-redis": "*",
+    "jenner/zoomeye": "0.1",
+    "vlucas/phpdotenv": "v2.3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vincent\\Mice\\": "src/",
+      "Vincent\\Mice\\Test\\": "test/"
+    }
+  }
+}
